@@ -13,7 +13,7 @@ export function LeadForm() {
 
   if (submitted) {
     return (
-      <div className="border hairline bg-[#0b0b0a] p-8">
+      <div className="border hairline bg-[#0b0b0a]/60 backdrop-blur-xl p-8 shadow-2xl">
         <p className="text-xs uppercase tracking-[0.25em] text-[#d7ff2f]">
           Request received
         </p>
@@ -37,13 +37,13 @@ export function LeadForm() {
 
   return (
     <form
-      className="grid gap-5 border hairline bg-[#0b0b0a] p-6 sm:p-8"
+      className="grid gap-5 border hairline bg-[#0b0b0a]/60 backdrop-blur-xl p-6 sm:p-8 shadow-2xl"
       onSubmit={onSubmit}
     >
       <label className="grid gap-2 text-sm text-[#d8d5cc]">
         Nearby club
         <select
-          className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+          className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
           required
           defaultValue=""
         >
@@ -61,7 +61,7 @@ export function LeadForm() {
         <label className="grid gap-2 text-sm text-[#d8d5cc]">
           First name
           <input
-            className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+            className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
             name="firstName"
             required
             autoComplete="given-name"
@@ -70,7 +70,7 @@ export function LeadForm() {
         <label className="grid gap-2 text-sm text-[#d8d5cc]">
           Last name
           <input
-            className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+            className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
             name="lastName"
             required
             autoComplete="family-name"
@@ -81,7 +81,7 @@ export function LeadForm() {
         <label className="grid gap-2 text-sm text-[#d8d5cc]">
           Email
           <input
-            className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+            className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
             type="email"
             name="email"
             required
@@ -91,7 +91,7 @@ export function LeadForm() {
         <label className="grid gap-2 text-sm text-[#d8d5cc]">
           Phone
           <input
-            className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+            className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
             type="tel"
             name="phone"
             required
@@ -103,7 +103,7 @@ export function LeadForm() {
       <label className="grid gap-2 text-sm text-[#d8d5cc]">
         Membership number
         <input
-          className="h-12 border border-white/15 bg-black px-4 text-white outline-none focus:border-[#ffb000]"
+          className="h-12 border border-white/15 bg-white/5 backdrop-blur-sm px-4 text-white outline-none focus:border-[#ffb000]"
           name="membership"
           placeholder="Optional"
         />
@@ -111,7 +111,7 @@ export function LeadForm() {
       <label className="grid gap-2 text-sm text-[#d8d5cc]">
         Message
         <textarea
-          className="min-h-32 border border-white/15 bg-black px-4 py-3 text-white outline-none focus:border-[#ffb000]"
+          className="min-h-32 border border-white/15 bg-white/5 backdrop-blur-sm px-4 py-3 text-white outline-none focus:border-[#ffb000]"
           name="message"
           placeholder="Tell us your goal or preferred timing."
         />

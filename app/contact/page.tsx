@@ -4,6 +4,7 @@ import { LeadForm } from "@/components/lead-form";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeader } from "@/components/section-header";
 import { IMAGES, contact } from "@/lib/content";
+import { BeamsBackground } from "@/components/ui/beams-background";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -20,8 +21,9 @@ export default function ContactPage() {
         image={IMAGES.contact}
         text="Choose a nearby club, share your details, and the Skale team can help you find the right membership path."
       />
-      <section className="section-pad">
-        <div className="inner grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+      <section className="relative overflow-hidden border-y hairline">
+        <BeamsBackground className="absolute inset-0 h-full min-h-0" intensity="medium" />
+        <div className="inner section-pad relative z-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeader
               align="left"
