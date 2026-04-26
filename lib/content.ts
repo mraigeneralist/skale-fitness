@@ -4,18 +4,25 @@ export const IMAGES = {
   about: "https://skalefitness.com/wp-content/uploads/2022/01/first-step-in-the-right-direction-KRTZXWR.jpg.webp",
   community: "https://skalefitness.com/wp-content/uploads/2022/01/fit-group-of-people-exercising-on-a-treadmill-in-g-95G38G9.jpg.webp",
   programHero: "https://skalefitness.com/wp-content/uploads/2022/01/Kettlebell-Workout-skale-fitness-unlimited-best-gym-in-chennai-best-fitness-centre-in-chennai.webp",
-  pricing: "https://skalefitness.com/wp-content/uploads/2022/01/two-men-at-the-gym.webp",
+  pricing: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2200&q=80",
   locations: "https://skalefitness.com/wp-content/uploads/2024/08/Anna-Nagar.webp",
   trainers: "https://skalefitness.com/wp-content/uploads/2022/01/Men-in-gym-with-trainer-exercising-on-fit-boxes.webp",
   testimonials: "https://skalefitness.com/wp-content/uploads/2024/09/woman-is-pulling-rope-with-man-woman-doing-lift-2048x2048.webp",
-  contact: "https://skalefitness.com/wp-content/uploads/2022/01/skale-fitness-unlimited-best-gym-in-chennai-best-fitness-centre-in-chennai.webp",
+  contact: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=2200&q=80",
+  classes: "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=2200&q=80",
+  corporate: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=2200&q=80",
+  virtual: "https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=2200&q=80",
+  gallery: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=2200&q=80",
+  blogs: "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=2200&q=80",
 };
 
 export const nav = [
   { label: "Programs", href: "/programs" },
+  { label: "Classes", href: "/classes" },
   { label: "Pricing", href: "/pricing" },
   { label: "Locations", href: "/locations" },
-  { label: "Trainers", href: "/trainers" },
+  { label: "Benefits", href: "/member-benefits" },
+  { label: "Blogs", href: "/blogs" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -95,52 +102,69 @@ export const programs = [
 export const pricing = [
   {
     name: "Monthly",
-    price: "Rs 2,999",
+    price: "Rs 5,000",
     note: "Best for a trial month",
     features: ["Gym floor access", "Cardio and strength zones", "Club confirmation required"],
   },
   {
     name: "Quarterly",
-    price: "Rs 6,999",
+    price: "Rs 8,000",
     note: "For a serious 12-week reset",
     features: ["Better monthly value", "Class access by club", "Upgrade path available"],
     highlight: true,
   },
   {
     name: "Half Yearly",
-    price: "Rs 9,999",
+    price: "Rs 10,000",
     note: "For building consistency",
     features: ["Six-month access", "Trainer guidance", "Membership support"],
   },
   {
     name: "Annual",
-    price: "Rs 14,999",
+    price: "Rs 18,000",
     note: "Highest commitment value",
     features: ["Year-round access", "Community events", "Best long-term value"],
   },
   {
     name: "Group Package",
-    price: "Ask club",
-    note: "For friends and teams",
-    features: ["Group onboarding", "Flexible club support", "Shared accountability"],
+    price: "Rs 100,000",
+    note: "For 10 people",
+    features: ["Group onboarding", "Shared accountability", "Team membership support"],
   },
   {
-    name: "Corporate",
-    price: "Custom",
-    note: "For workplace wellness",
-    features: ["Team memberships", "Wellness programming", "Location-specific support"],
+    name: "Group Package",
+    price: "Rs 250,000",
+    note: "For 30 people",
+    features: ["Large group access", "Wellness programming", "Location-specific support"],
   },
 ];
 
 export const locations = [
-  { name: "Ambattur", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-1.webp" },
-  { name: "Perambur", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-2.webp" },
-  { name: "Mugappair East", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-3.webp" },
-  { name: "Avadi", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-4.webp" },
+  { name: "Anna Nagar", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/08/Anna-Nagar.webp" },
+  { name: "Coimbatore", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Coimbatore.webp" },
+  { name: "Virugambakkam", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-1.webp" },
+  { name: "Thiruvanmiyur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-2.webp" },
+  { name: "Tambaram", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-3.webp" },
+  { name: "Royapuram", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-4.webp" },
+  { name: "Pudhur (Ambattur)", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cver.webp" },
+  { name: "Porur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Untitled-design-2.webp" },
+  { name: "Pallavaram", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Untitled-design-3.webp" },
+  { name: "Nungambakkam", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/08/Untitled-design-6.webp" },
+  { name: "Kolathur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-1.webp" },
+  { name: "Kodungaiyur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-2.webp" },
+  { name: "Kilpauk", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-3.webp" },
+  { name: "Perambur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-4.webp" },
   { name: "Collector Nagar", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cver.webp" },
-  { name: "Anna Nagar", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/08/Anna-Nagar.webp" },
   { name: "Madipakkam", status: "Verify current access", image: "https://skalefitness.com/wp-content/uploads/2024/07/Untitled-design-2.webp" },
   { name: "Pondicherry", status: "Regional listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Untitled-design-3.webp" },
+  { name: "Chinmay Nagar", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/08/Anna-Nagar.webp" },
+  { name: "Nolambur", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Coimbatore.webp" },
+  { name: "Mogappair", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-1.webp" },
+  { name: "Ayappakkam", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-2.webp" },
+  { name: "KK Nagar", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-3.webp" },
+  { name: "Ashok Nagar", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cover-4.webp" },
+  { name: "Avadi", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Cver.webp" },
+  { name: "Alwarpet", status: "FOCO listing", image: "https://skalefitness.com/wp-content/uploads/2024/07/Untitled-design-2.webp" },
 ];
 
 export const testimonials = [
@@ -233,8 +257,94 @@ export const faqs = [
 ];
 
 export const contact = {
-  address: "No. 36, Chinmaya Nagar Stage 1, Virugambakkam, Chennai, Tamil Nadu 600092",
-  phone: "+91 78248 89898",
-  email: "info@skalefitness.com",
-  hours: "Open daily. Timings vary by club.",
+  address: "No: 6,7,& 8 - 3rd Floor, Kaliamman Koil St, Chinmaya Nagar, Chennai-600 092",
+  phone: "+91 95 00 00 6226",
+  email: "Info@skalefitness.com",
+  hours: "Monday - Saturday: 5:30 am - 10:00 pm. Sunday: 7:00 am - 1:00 pm.",
 };
+
+export const benefits = [
+  "Fitness Plans",
+  "Workout Programs",
+  "Meal Plans",
+  "Custom Workouts",
+  "Healthy Recipes",
+  "Cardio Training",
+  "Crossfit Training",
+  "Strength Training",
+];
+
+export const additionalWorkouts = [
+  "Olympic style weight lifts",
+  "Plyometric",
+  "Conditioning",
+  "Kettlebell",
+  "Miscellaneous",
+  "Trx suspension and Rip training",
+  "Boxing",
+  "Yoga",
+  "Zumba",
+  "HIIT",
+];
+
+export const classPackages = [
+  {
+    name: "Burn Fat, Build Muscle, Tone",
+    price: "Rs 2,200",
+    duration: "4 Week Program - 38 Min/Day",
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Smart HIIT & Strength",
+    price: "Rs 3,000",
+    duration: "8 Week Program - 40 Min/Day",
+    image: "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Booty Boot Camp",
+    price: "Rs 3,200",
+    duration: "4 Week Program - 38 Min/Day",
+    image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "TRX Power Circuit",
+    price: "Rs 1,500",
+    duration: "4 Week Program - 38 Min/Day",
+    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Pull-up Strength Builder",
+    price: "Rs 3,000",
+    duration: "8 Week Program - 40 Min/Day",
+    image: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Transformation Sprint",
+    price: "Rs 4,500",
+    duration: "4 Week Program - 38 Min/Day",
+    image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1200&q=80",
+  },
+];
+
+export const blogs = [
+  { title: "Zumba Dance Workout for Weight Loss", category: "Exercise", excerpt: "Energetic routines that enhance heart health, burn calories, and support full-body toning.", image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Exercise Ball Workout", category: "Exercise", excerpt: "Core routines, posture drills, and stability moves for flexibility and body control.", image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=1200&q=80" },
+  { title: "7 Things You Must Know Before Joining the Gym in Chennai", category: "Health & fitness", excerpt: "How to evaluate machines, trainers, ladies zones, and workout variety before joining.", image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Workout Plans for Women", category: "Health & fitness", excerpt: "Strength, cardio, and flexibility plans tailored to goals and training levels.", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Best Muscle-Building Foods", category: "Diet & Nutrition", excerpt: "A practical muscle-growth approach that pairs training with nutrient-dense eating.", image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80" },
+  { title: "The Best Exercises for Stronger Arm Muscles", category: "Health & fitness", excerpt: "Arm training ideas for strength, definition, and day-to-day physical performance.", image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80" },
+  { title: "The Best Exercises to Improve Sleep Quality", category: "Health & fitness", excerpt: "Walking, swimming, yoga, cycling, stretching, and strength training for better sleep.", image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Gym Workout Plan for Beginners", category: "Gym & Fitness Centers", excerpt: "A full-body starting point for core strength, consistency, and confidence.", image: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Exercise to Strengthen Bones", category: "Strengthening", excerpt: "Bone-strength routines and nutrition habits for healthy joints and long-term training.", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Biceps Exercise", category: "Biceps Exercise", excerpt: "Beginner-friendly dumbbell routines and exercise choices for bigger, stronger arms.", image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Chest Muscle Exercises", category: "Chest Muscle Exercises", excerpt: "Upper-body strength ideas for home workouts and muscle building.", image: "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Mental Health Benefits of Exercise", category: "Health & fitness", excerpt: "How regular movement can reduce stress and improve mood, energy, and routine.", image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80" },
+];
+
+export const servicePages = [
+  { title: "Corporate Wellness", href: "/corporate", text: "Team memberships and structured wellness programming for workplaces.", image: IMAGES.corporate },
+  { title: "Virtual Fitness", href: "/virtual-fitness", text: "Remote coaching support and flexible fitness content for members outside the club.", image: IMAGES.virtual },
+  { title: "Gallery", href: "/gallery", text: "A visual look at training energy, equipment, classes, and club atmosphere.", image: IMAGES.gallery },
+  { title: "Franchisee", href: "/franchisee", text: "Franchise Owned, Company Operated expansion opportunities for new markets.", image: IMAGES.locations },
+  { title: "Stories", href: "/stories", text: "Member motivation, web story style highlights, and transformation signals.", image: IMAGES.testimonials },
+];

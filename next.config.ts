@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "skalefitness.com",
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };

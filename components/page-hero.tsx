@@ -5,9 +5,16 @@ type PageHeroProps = {
   title: string;
   text: string;
   image: string;
+  imagePosition?: string;
 };
 
-export function PageHero({ eyebrow, title, text, image }: PageHeroProps) {
+export function PageHero({
+  eyebrow,
+  title,
+  text,
+  image,
+  imagePosition = "object-center",
+}: PageHeroProps) {
   return (
     <section className="relative min-h-[72svh] overflow-hidden pt-20">
       <Image
@@ -16,7 +23,7 @@ export function PageHero({ eyebrow, title, text, image }: PageHeroProps) {
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-68"
+        className={`object-cover ${imagePosition} opacity-68`}
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.9),rgba(0,0,0,0.45),rgba(0,0,0,0.12)),linear-gradient(0deg,rgba(0,0,0,0.72),transparent_50%)]" />
       <div className="relative z-10 flex min-h-[calc(72svh-5rem)] items-end">

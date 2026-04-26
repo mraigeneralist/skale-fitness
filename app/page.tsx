@@ -6,6 +6,10 @@ import { ProgramRail } from "@/components/program-rail";
 import { SectionHeader } from "@/components/section-header";
 import { TestimonialMarquee } from "@/components/testimonial-marquee";
 import { FeatureBand } from "@/components/feature-band";
+import { BenefitsStrip } from "@/components/benefits-strip";
+import { BlogGrid } from "@/components/blog-grid";
+import { ClassesSection } from "@/components/classes-section";
+import { ServiceLinks } from "@/components/service-links";
 import { heroStats } from "@/lib/content";
 
 export default function Home() {
@@ -28,6 +32,8 @@ export default function Home() {
       </section>
       <FeatureBand />
       <ProgramRail />
+      <ClassesSection compact />
+      <BenefitsStrip />
       <section className="section-pad">
         <SectionHeader
           kicker="Memberships"
@@ -38,6 +44,8 @@ export default function Home() {
       </section>
       <LocationGrid />
       <TestimonialMarquee />
+      <BlogGrid compact />
+      <ServiceLinks />
       <FinalCTA />
     </main>
   );

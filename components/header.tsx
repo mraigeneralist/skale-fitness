@@ -16,7 +16,7 @@ export function Header() {
           <Image src={IMAGES.logo} alt="Skale Fitness" width={126} height={44} priority />
           <span className="sr-only">Skale Fitness</span>
         </Link>
-        <nav className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.22em] text-[#d7d3c7] lg:flex">
+        <nav className="hidden items-center gap-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#d7d3c7] xl:gap-7 lg:flex">
           {nav.map((item) => (
             <Link className="transition hover:text-white" href={item.href} key={item.href}>
               {item.label}
@@ -25,7 +25,7 @@ export function Header() {
         </nav>
         <Link
           href="/contact"
-          className="hidden bg-[#ffb000] px-5 py-3 text-xs font-black uppercase tracking-[0.2em] text-black transition hover:bg-[#d7ff2f] lg:inline-flex"
+          className="hidden bg-[#ffb000] px-5 py-3 text-xs font-black uppercase tracking-[0.2em] !text-black transition hover:bg-white lg:inline-flex"
         >
           Free pass
         </Link>

@@ -14,7 +14,7 @@ export function FinalCTA() {
         </div>
         <Link
           href="/contact"
-          className="relative z-10 w-fit bg-black px-6 py-4 text-xs font-black uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
+          className="relative z-10 w-fit bg-black px-6 py-4 text-xs font-black uppercase tracking-[0.2em] !text-white transition hover:bg-white hover:!text-black"
         >
           Book a visit
         </Link>
