@@ -7,11 +7,11 @@ import { IMAGES } from "@/lib/content";
 
 export function Hero() {
   const { scrollY } = useScroll();
-  const scale = useTransform(scrollY, [0, 500], [1, 1.12]);
-  const y = useTransform(scrollY, [0, 500], [0, 70]);
+  const scale = useTransform(scrollY, [0, 500], [1, 1.06]);
+  const y = useTransform(scrollY, [0, 500], [0, 38]);
 
   return (
-    <section className="noise relative min-h-[100svh] overflow-hidden">
+    <section className="noise relative min-h-[100svh] overflow-hidden bg-black">
       <motion.div className="absolute inset-0" style={{ scale, y }}>
         <Image
           src={IMAGES.hero}
@@ -19,10 +19,10 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-72"
+          className="object-contain object-top opacity-78 sm:object-[center_top]"
         />
       </motion.div>
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.9),rgba(0,0,0,0.52),rgba(0,0,0,0.12)),linear-gradient(0deg,rgba(0,0,0,0.82),transparent_48%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.92),rgba(0,0,0,0.55),rgba(0,0,0,0.18)),linear-gradient(0deg,rgba(0,0,0,0.88),transparent_54%),linear-gradient(180deg,rgba(0,0,0,0.6),transparent_22%)]" />
       <div className="relative z-10 flex min-h-[100svh] items-end pt-24">
         <div className="inner pb-16 sm:pb-20">
           <motion.p
