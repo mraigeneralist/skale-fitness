@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f6f4ee;
+  --muted: #a6a49d;
+  --line: rgba(246, 244, 238, 0.14);
+  --amber: #ffb000;
+  --volt: #d7ff2f;
+  --steel: #141414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255, 176, 0, 0.12), transparent 28rem),
+    linear-gradient(180deg, #050505 0%, #0b0b0a 54%, #050505 100%);
+  color: var(--foreground);
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--amber);
+  color: #080806;
+}
+
+.display {
+  font-family: var(--font-display), Impact, "Arial Narrow", sans-serif;
+  letter-spacing: 0;
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.24;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.section-pad {
+  padding-block: clamp(5rem, 9vw, 9rem);
+}
+
+.inner {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.hairline {
+  border-color: var(--line);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
